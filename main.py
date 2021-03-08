@@ -17,6 +17,7 @@ response.json()
 result_list = response.json().get("result")
 
 print(result_list)
-for result in result_list:
-    if result.get("chat") == "chat":
-        print("3")
+for index, result in enumerate(result_list):
+    print(result.keys())
+    if result.keys() == "message":
+        print(1)
